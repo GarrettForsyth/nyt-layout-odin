@@ -1,0 +1,295 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  float: left;
+  margin-right: 15px;
+}
+
+.right {
+  float: right;
+  margin-left: 15px;
+}
+
+/* START MAIN NAV BAR */
+
+#nav-box-main {
+  height: 35px;
+}
+ 
+#nav-bar-main {
+  position: fixed;
+  display: block;
+
+  width: 97%;
+  left: 1%;
+  right: 1%;
+
+
+  padding: 10px; 0;
+  background-color: green;
+}
+
+#nav-bar-main > ul {
+  list-style: none;
+}
+
+#nav-bar-main > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+#company-title {
+  display: inline-block;
+  background-color: yellow;
+  width: 200px;
+  margin-right: auto;
+  margin-left : auto;
+  position: relative;
+  left: 30%;
+}
+
+/* END MAIN NAV BAR */
+
+
+/* START TOP NAV BAR*/
+
+#nav-bar-top {
+  display: block;
+
+  width: 96%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  height: 100px;
+
+  border-top: 2px solid #a1a1a1;
+  border-bottom: 2px solid #a1a1a1;
+  padding: 7px 10px;
+  background-color: blue;
+}
+
+
+#nav-bar-top > ul {
+  width: 100%;
+  height: 100%;
+}
+
+#nav-bar-top > ul > li {
+  margin-right: 15px;
+  border-right: 2px solid #a1a1a1;
+  float: left;
+  width: 19%;
+  height 90px;
+}
+
+#nav-bar-top > ul > .last-item {
+  border-right: none;
+}
+
+
+#nav-bar-top > ul > li > img {
+  display: inline-block;
+  float: left;
+  width: 24%;
+  height: 90px;
+  padding-bottom: 7px;
+}
+
+.art-desc {
+  display: inline-block;
+  width: 60%;
+  margin: 10px 10px;
+  margin-top: 20px;
+}
+
+/* END TOP NAV BAR */
+
+#main-container {
+  display: block;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: red;
+}
+
+#title-category {
+  display: block;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+#title-article {
+ display:block;
+ font-size: 2.5em;
+ font-weight: bold;
+ font-style: oblique;
+ width: 100%;
+ padding-bottom: 15px;
+ border-bottom: 2px solid #a1a1a1;
+}
+
+/* START SOCIAL NAV */
+
+#nav-bar-social {
+}
+
+#nav-bar-social > ul > li > a > img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#article-info{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#article-author {
+  font-weight:bold;
+  letter-spacing: -1px;
+
+}
+
+#article-date{
+  letter-spacing: -1px;
+}
+
+/* END SOCIAL NAV */ 
+
+/* feature image */
+
+#main-container > img {
+  width: 100%;
+}
+
+#feat-image-desc {
+  display:block;
+  width: 60%;
+  font-size: 1.1em;
+
+  color: #414347;
+}
+
+#feat-image-desc > #image-credit {
+  font-size: 0.8;
+  color: #64686d;
+}
+
+/* end feature image */
+
+
+[id*="article-pt-"] {
+  width: 50%;
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  float: left;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#comment-section {
+
+  width: 30%;
+  float: right;
+  margin-top: 200px;
+
+}
+
+/* grid view start */
+
+.inflation-table {
+
+  clear: both;
+  border-top: 2px solid #a1a1a1;
+
+  border-bottom: 2px solid #a1a1a1;
+}
+
+.table-desc {
+  display:block;
+  color: #414347;
+}
+
+.col-1 { width: 25%;}
+.col-2 { width: 50%;}
+.col-3 { width: 75%;}
+.col-4 { width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] > img {
+  display: block;
+  width: 40%;
+  margin: 15px auto;
+}
+
+/* gird view end */
